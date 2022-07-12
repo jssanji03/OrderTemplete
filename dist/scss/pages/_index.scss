@@ -1,0 +1,108 @@
+.main-header{
+    .navbar-nav{
+        .nav-link{
+            border-right: 1px solid #838383;
+            padding: 10px 20px;
+        }
+    }
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        position: relative;
+        i {
+            font-size: 18px;
+            color: #292d48;
+        }
+        .badge{
+            position: absolute;
+            top: 0px;
+            right: -8px;
+            border-radius: 24px;
+        }
+    
+        &.shake {
+            animation: shakeCart .4s ease-in-out forwards;
+        }
+    }
+}
+
+.Soe_Banner {
+    margin: 0 auto;
+    width: 100%;
+
+    .carousel {
+        @media #{$breakpoint-md},
+        #{$breakpoint-xs} {
+            padding: 0px;
+        }
+        .carousel-inner {
+            .carousel-item {
+                .soe_photoLink{
+                    .soe_resImg {
+                        // background: center center no-repeat;
+                        background-size: cover;
+                        -webkit-background-size:cover;
+                        height: 500px;
+                        position: relative;
+                        z-index: 1;
+                        width: 100%;
+                        
+
+
+                        @media #{$breakpoint-lg} {
+                            // object-fit: fill;
+                            // width: 100%;
+                            height: 280px;
+                            background: center center no-repeat;
+                            background-size: 100% 280px;
+                            -webkit-background-size: 100% 280px;
+                        }
+
+                        @media #{$breakpoint-md} {
+                            // width: 100%;
+                            // object-fit: fill;
+                            height: 250px;
+                            background-size: 100% 250px;
+                            -webkit-background-size: 100% 250px;
+                        }
+
+                        @media #{$breakpoint-xs} {
+                            height: 200px;
+                            background-size: 100% 200px;
+                            -webkit-background-size: 100% 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Soe_bg{
+    // background-color: #f2f2f2;
+    min-height: 300px;
+}
+.action {
+    display: block;
+    margin: 100px auto;
+    width: 100%;
+    // text-align: center;
+}
+
+.action a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f30;
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+        background: #000;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
