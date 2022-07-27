@@ -3,5 +3,35 @@
     border-bottom: 1px solid rgb(126, 126, 126);
     margin-bottom: 10px;
     line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
   }
+}
+.price {
+  text-align: center;
+  border: 1px solid rgb(148, 148, 148) !important;
+  min-width: 100px !important
+}
+
+.custom-btn {
+  border: 1px solid rgb(148, 148, 148);
+  &:hover {
+    background-color: rgb(184, 184, 184);
+    color: #fff;
+  }
+  &:disabled {
+    background-color: rgb(107, 107, 107);
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.price::-webkit-outer-spin-button,
+input.price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.price {
+  -moz-appearance: textfield;
 }

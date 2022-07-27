@@ -11,10 +11,8 @@
   <link rel="stylesheet" href="./dist/css/adminlte.min.css">
   <link rel="stylesheet" href="./dist/scss/pages/templatemo.css">
   <link rel="stylesheet" href="./dist/scss/style.css">
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./custom_plugin/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./custom_plugin/slick-1.8.1/slick/slick-theme.min.css">
 
 </head>
 
@@ -22,7 +20,7 @@
   <div class="wrapper">
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container-fluid">
-        <a href="../../index3.html" class="navbar-brand">
+        <a href="./index.html" class="navbar-brand">
           <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
           <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -36,7 +34,7 @@
           <!-- Left navbar links -->
           <ul class="navbar-nav me-2 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a href="index3.html" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">About</a>
@@ -45,26 +43,30 @@
               <a href="./pages/products.html" class="nav-link">Products</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">WishList</a>
             </li>
           </ul>
         </div>
         <!-- Right navbar links -->
         <ul class="order-md-3 d-flex navbar-no-expand ml-auto order-1">
           <!-- Messages Dropdown Menu -->
-          <li class="nav-item">
-            <div id="cart" class="cart" >
+          <li class="nav-item mr-2">
+            <div id="cart" class="cart">
               <i class="fas fa-shopping-cart"></i>
               <span class="badge badge-info navbar-badge" data-totalitems="0">0</span>
             </div>
           </li>
-          <li class="nav-item ml-2">
-            <a class="nav-link" href="./login.html" role="button">
+          <li class="nav-item ">
+            <a class="nav-link px-2" href="./pages/pendingOrder.html" role="button">
+              會員中心
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2" href="#" role="button">
               Login
             </a>
           </li>
         </ul>
-       
       </div>
     </nav>
     <!-- /.navbar -->

@@ -1,12 +1,11 @@
 // DataTable 基本樣式 //
 table.dataTable tbody th, 
 table.dataTable tbody td{
-    color: $text;
+    color: rgb(60, 60, 60);
     padding: 15px 0px;
-    // border: none;
 }
 table.dataTable{
-  background-color: #fff;
+  // background-color: rgb(234, 245, 252);
   text-align: center;
   border: 1px solid rgb(204, 204, 204);
     thead{
@@ -50,19 +49,8 @@ table.dataTable{
     tfoot{
         tr{
             border-top:1px solid $secondary ;
-            color: $text;
+            color: #ccc;
         }
-    }
-    .assignActive{
-      background-color: $primary;
-      color: $white;
-      display: inline-block;
-      width: 120px;
-      height: 35px;
-      border-radius: 5px;
-      border: none;
-      text-align: center;
-      padding: 5px;
     }
 }
 
@@ -74,92 +62,6 @@ table.dataTable{
 
 // DataTable Card樣式 Start //
 
-.table-card {
-  @media (max-width: 992px) {
-    border: none !important;
-    // background-color: transparent !important;
-    min-width: 100%;
-
-    /*針對tr去做隱藏*/
-    thead {
-      .tr-only-hide {
-        display: none !important;
-      }
-
-    }
-    tbody {
-      background-color: transparent;
-      /*讓tr變成區塊主要讓他有個區塊*/
-      tr {
-        width: 100%;
-        display: block;
-        font-size: 15px;
-        line-height: 15px;
-        box-shadow: 2px 2px 5px #ccc;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: none !important;
-        padding: 10px !important;
-
-        &:nth-child(odd) {
-          border-left: 10px solid $text;
-          border-radius: 20px;
-          background-color: #E8F7FC;
-        }
-
-        &:nth-child(even) {
-          border-left: 10px solid $yellow;
-          border-radius: 20px;
-          background-color:rgb(237, 237, 237);
-        }
-        .status {
-
-          // margin-left: 20px;
-          &:before {
-            display: none;
-          }
-        }
-
-        td {
-          text-align: left;
-          overflow: hidden;
-          width: 100%;
-          display: block;
-          border: none !important;
-
-          &:before {
-            /*最重要的就是這串*/
-            content: attr(data-th) " : ";
-            /*最重要的就是這串*/
-            display: inline-block;
-            text-transform: uppercase;
-            width: 100%;
-            font-weight: 400;
-            margin-right: 10px;
-            text-align: start ;
-            color: $primary;
-          }
-          input.form-control{
-            width: 90%;
-          }
-          select.form-select{
-            width: 90%;
-          }
-          .input-group{
-            width: 90%;
-            input.form-control {
-                width: 40%;
-              }
-          }
-        }
-      }
-    }
-
-    tfoot {
-      display: none !important;
-    }
-  }
-}
 .datatable-card {
   @media (max-width: 992px) {
     border: none !important;
@@ -188,7 +90,7 @@ table.dataTable{
         padding: 10px !important;
 
         &:nth-child(odd) {
-          border-left: 10px solid $text;
+          border-left: 10px solid #ccc;
           border-radius: 20px;
           
         }
@@ -240,7 +142,7 @@ table.dataTable{
     }
   }
 }
-.datatable-RWDcard,.searchResult {
+.datatable-RWDcard{
   @media (max-width: 992px) {
     border: none !important;
     // background-color: transparent !important;
@@ -256,7 +158,6 @@ table.dataTable{
 
     tbody {
       background-color: transparent;
-
       /*讓tr變成區塊主要讓他有個區塊*/
       tr {
         width: 100%;
@@ -270,7 +171,7 @@ table.dataTable{
         padding: 10px !important;
 
         &:nth-child(odd) {
-          border-left: 10px solid $text;
+          border-left: 10px solid #ccc;
           border-radius: 20px;
 
         }
@@ -308,11 +209,9 @@ table.dataTable{
             text-align: start !important;
             color: $primary;
           }
-
           input.form-control {
             width: 90%;
           }
-
           select.form-select {
             width: 90%;
           }

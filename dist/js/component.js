@@ -31,7 +31,7 @@ $(function () {
       "responsive": false,
       "lengthChange": false,
       "autoWidth": false,
-      "searching": false,
+      "searching": true,
       "paging": false,
       "info":false,
         // "scrollX": true,
@@ -45,11 +45,12 @@ $(function () {
             "lengthMenu": "顯示 _MENU_ 筆資料"
           },
         
-        "initComplete": function (settings, json) {
-            $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
-        },
+        // "initComplete": function (settings, json) {
+        //     $(".datatable-RWDcard").wrap("<div style='overflow:auto; width:100%;position:relative;'></div>");
+        // },
     }
   );
+
 
 });
   

@@ -1,18 +1,16 @@
 @charset "UTF-8";
 /* Plugins Master Stylesheet */
-@import url("../../dist/css/adminlte.min.css");
+@import '../../dist/css/adminlte.min.css';
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("../../plugins/datatables-bs4/css/dataTables.bootstrap4.css");
+@import '../../plugins/datatables-bs4/css/dataTables.bootstrap4.css';
 @import url("../../plugins/fontawesome-free/css/all.min.css");
 @import url("../../plugins/select2/css/select2.min.css");
 @import url("../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css");
-@import '../../custom_plugin/slick-1.8.1/slick/slick.css';
-@import '../../custom_plugin/slick-1.8.1/slick/slick-theme.min.css';
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600&display=swap");
@@ -11641,6 +11639,194 @@ table {
   height: 300px;
 }
 
+table.dataTable tbody th,
+table.dataTable tbody td {
+  color: rgb(60, 60, 60);
+  padding: 15px 0px;
+}
+
+table.dataTable {
+  text-align: center;
+  border: 1px solid rgb(204, 204, 204);
+}
+table.dataTable thead {
+  width: 100%;
+}
+table.dataTable thead tr {
+  color: #6c757d;
+  font-size: 16px;
+}
+table.dataTable thead tr th {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  vertical-align: middle;
+  line-height: 20px;
+  white-space: nowrap;
+}
+table.dataTable tbody tr {
+  padding: 0px;
+  border: 1px solid rgba(134, 200, 238, 0.329);
+}
+table.dataTable tbody tr .dateColor {
+  color: #6c757d;
+  font-weight: 300;
+}
+table.dataTable tbody tr td {
+  vertical-align: middle;
+  outline: none;
+  padding: 8px;
+  white-space: nowrap;
+  text-align: center;
+}
+table.dataTable tbody tr:nth-child(odd) {
+  background-color: rgb(234, 245, 252) !important;
+}
+table.dataTable tfoot tr {
+  border-top: 1px solid #6c757d;
+  color: #ccc;
+}
+
+.dataTables_wrapper {
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .datatable-card {
+    border: none !important;
+    min-width: 100%;
+    /*針對tr去做隱藏*/
+  }
+  .datatable-card thead .tr-only-hide {
+    display: none !important;
+  }
+  .datatable-card tbody {
+    background-color: transparent;
+    /*讓tr變成區塊主要讓他有個區塊*/
+  }
+  .datatable-card tbody tr {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    line-height: 15px;
+    -webkit-box-shadow: 2px 2px 5px #ccc;
+            box-shadow: 2px 2px 5px #ccc;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none !important;
+    padding: 10px !important;
+  }
+  .datatable-card tbody tr:nth-child(odd) {
+    border-left: 10px solid #ccc;
+    border-radius: 20px;
+  }
+  .datatable-card tbody tr:nth-child(even) {
+    border-left: 10px solid #ffc107;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+  }
+  .datatable-card tbody tr .status:before {
+    display: none;
+  }
+  .datatable-card tbody tr td {
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    border: none !important;
+  }
+  .datatable-card tbody tr td:before {
+    /*最重要的就是這串*/
+    content: attr(data-th) " : ";
+    /*最重要的就是這串*/
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 400;
+    margin-right: 10px;
+    text-align: start;
+    color: #2a2929;
+  }
+  .datatable-card tbody tr td input.form-control {
+    width: 90%;
+  }
+  .datatable-card tbody tr td select.form-select {
+    width: 90%;
+  }
+  .datatable-card tfoot {
+    display: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .datatable-RWDcard {
+    border: none !important;
+    min-width: 100%;
+    /*針對tr去做隱藏*/
+  }
+  .datatable-RWDcard thead .tr-only-hide {
+    display: none !important;
+  }
+  .datatable-RWDcard tbody {
+    background-color: transparent;
+    /*讓tr變成區塊主要讓他有個區塊*/
+  }
+  .datatable-RWDcard tbody tr {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    line-height: 15px;
+    -webkit-box-shadow: 2px 2px 5px #ccc;
+            box-shadow: 2px 2px 5px #ccc;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none !important;
+    padding: 10px !important;
+  }
+  .datatable-RWDcard tbody tr:nth-child(odd) {
+    border-left: 10px solid #ccc;
+    border-radius: 20px;
+  }
+  .datatable-RWDcard tbody tr:nth-child(even) {
+    border-left: 10px solid #ffc107;
+    border-radius: 20px;
+    background-color: rgb(237, 237, 237);
+  }
+  .datatable-RWDcard tbody tr .status:before {
+    display: none;
+  }
+  .datatable-RWDcard tbody tr td {
+    text-align: start !important;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    border: none !important;
+  }
+  .datatable-RWDcard tbody tr td:before {
+    /*最重要的就是這串*/
+    content: attr(data-th) " : ";
+    /*最重要的就是這串*/
+    display: inline-block;
+    text-transform: uppercase;
+    width: 20%;
+    font-weight: 400;
+    margin-right: 10px;
+    text-align: start !important;
+    color: #2a2929;
+  }
+  .datatable-RWDcard tbody tr td input.form-control {
+    width: 90%;
+  }
+  .datatable-RWDcard tbody tr td select.form-select {
+    width: 90%;
+  }
+  .datatable-RWDcard tfoot {
+    display: none !important;
+  }
+}
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -11650,6 +11836,14 @@ ul {
 }
 ul li {
   list-style: none;
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+}
+
+.main-container {
+  height: 100vh;
 }
 
 .main-header .navbar-nav .nav-link {
@@ -11754,4 +11948,35 @@ ul li {
   border-bottom: 1px solid rgb(126, 126, 126);
   margin-bottom: 10px;
   line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.price {
+  text-align: center;
+  border: 1px solid rgb(148, 148, 148) !important;
+  min-width: 100px !important;
+}
+
+.custom-btn {
+  border: 1px solid rgb(148, 148, 148);
+}
+.custom-btn:hover {
+  background-color: rgb(184, 184, 184);
+  color: #fff;
+}
+.custom-btn:disabled {
+  background-color: rgb(107, 107, 107);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input.price::-webkit-outer-spin-button,
+input.price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.price {
+  -moz-appearance: textfield;
 }/*# sourceMappingURL=style.css.map */
