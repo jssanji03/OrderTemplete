@@ -8,155 +8,118 @@
 
 
   <!-- Theme style -->
-  <!-- <link rel="stylesheet" href="../dist/css/adminlte.min.css"> -->
-  <!-- <link rel="stylesheet" href="../dist/scss/pages/templatemo.css"> -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/scss/pages/templatemo.css">
   <link rel="stylesheet" href="../dist/scss/style.css">
 
 </head>
 
 <body class="hold-transition layout-top-nav">
   <div class="wrapper">
-    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
-      <div class="container-fluid">
-        <a href="../index.html" class="navbar-brand">
-          <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: .8">
-          <span class="brand-text font-weight-light">AdminLTE 3</span>
-        </a>
-        <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-          <!-- Left navbar links -->
-          <ul class="navbar-nav me-2 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="../index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="./products.html" class="nav-link">Products</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">WishList</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Right navbar links -->
-        <ul class="order-md-3 d-flex navbar-no-expand ml-auto order-1">
-          <!-- Messages Dropdown Menu -->
-          <li class="nav-item mr-2">
-            <div id="cart" class="cart">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="badge badge-info navbar-badge" data-totalitems="0">0</span>
-            </div>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link px-2" href="./pendingOrder.html" role="button">
-              會員中心
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2" href="./login.html" role="button">
-              Login
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <aside id="navMenu-wrapper">
+    </aside>
     <!-- /.navbar -->
-
-    <div class="container main-container py-5">
-      <div class="row">
-        <div class="col-lg-3">
-          <h4 class="pb-4">會員中心</h4>
-          <ul class="list-unstyled">
-            <li class=" pb-1">
-              <a class="text-decoration-none" href="./pendingOrder.html">
-                待完成訂單
-              </a>
-            </li>
-            <li class=" pb-1">
-              <a class="text-decoration-none" href="./historyList.html">
-                歷史訂單
-              </a>
-            </li>
-            <li class=" pb-1">
-              <a class="text-decoration-none" href="./favorite.html">
-                我的最愛
-              </a>
-            </li>
-            <li class=" pb-1">
-              <a class="text-decoration-none" href="#">
-
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-9">
-          <section>
-            <div class="container-fluid p-0">
-              <div class="row mb-2">
-                <div class="col-sm-6">
-                  <h3>我的最愛</h3>
-                </div>
-                <div class="col-sm-6">
-                  <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">我的最愛</li>
-                  </ol>
-                </div>
-              </div>
-            </div><!-- /.container-fluid -->
-          </section>
+    <div class="content-wrapper">
+      <section class="content">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-12">
-              <table class="display datatable-RWDcard" style="width:100%">
-                <thead>
-                  <tr>
-                    <th>訂單日期</th>
-                    <th>訂單編號</th>
-                    <th>訂單電郵</th>
-                    <th>訂單狀態</th>
-                    <th>送貨方式</th>
-                    <th>送貨狀態</th>
-                    <th>金額</th>
-                    <th>付款方式</th>
-                    <th>付款狀態</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Tiger</td>
-                    <td>Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
-                    <td>5421</td>
-                    <td>t.nixon@datatables.net</td>
-                  </tr>
-                  <tr>
-                    <td>Garrett</td>
-                    <td>Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011/07/25</td>
-                    <td>$170,750</td>
-                    <td>8422</td>
-                    <td>g.winters@datatables.net</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="col-lg-2">
+              <h4 class="pb-4">會員中心</h4>
+              <ul class="list-unstyled templatemo-accordion">
+                <li class="pb-1">
+                  <a class="list-menu collapsed d-flex justify-content-between  text-decoration-none fw-bolder" href="#">
+                    訂單相關查詢
+                    <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                  </a>
+                  <ul class="collapse show list-unstyled pl-3">
+                    <li class=" pb-1">
+                      <a class="text-decoration-none" href="./pendingOrder.html">
+                        待完成訂單
+                      </a>
+                    </li>
+                    <li class=" pb-1">
+                      <a class="text-decoration-none" href="./historyList.html">
+                        歷史訂單
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-1">
+                  <a class="list-menu collapsed d-flex justify-content-between h5 text-decoration-none fw-bolder" href="#">
+                    個人帳戶查詢
+                    <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                  </a>
+                  <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                    <li><a class="text-decoration-none" href="./favorite.html">
+                        我的最愛
+                      </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-10">
+              <section>
+                <div class="container-fluid p-0">
+                  <div class="row mb-2">
+                    <div class="col-sm-12">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><i class="fas fa-map-marker-alt"></i></li>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item">會員中心</li>
+                        <li class="breadcrumb-item active">我的最愛</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="card mb-4 product-wap rounded-0">
+                        <div class="Soe_favCard">
+                          <img class="Soe_fullImg" style="height:200px" src="https://picsum.photos/id/21/200/200">
+                          <div class="Soe_favIcon">
+                            <a class="btn btn-success text-white"><i class="fas fa-heart"></i></a>
+                          </div>
+                        </div>
+                        <div class="card-body text-center p-2">
+                          <a href="product_single.html" class="fw-bold">Oupidatat non</a>
+                          <p class="text-center text-danger mt-2">$250.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card mb-4 product-wap rounded-0">
+                        <div class="Soe_favCard">
+                          <img class="Soe_fullImg" style="height:200px" src="https://picsum.photos/id/20/500/400">
+                          <div class="Soe_favIcon">
+                            <a class="btn btn-success text-white"><i class="fas fa-heart"></i></a>
+                          </div>
+                        </div>
+                        <div class="card-body text-center p-2">
+                          <a href="product_single.html" class="fw-bold">Oupidatat non</a>
+                          <p class="text-center text-danger mt-2">$250.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card mb-4 product-wap rounded-0">
+                        <div class="Soe_favCard">
+                          <img class="Soe_fullImg" style="height:200px" src="https://picsum.photos/id/30/500/400">
+                          <div class="Soe_favIcon">
+                            <a class="btn btn-success text-white"><i class="fas fa-heart"></i></a>
+                          </div>
+                        </div>
+                        <div class="card-body text-center p-2">
+                          <a href="product_single.html" class="fw-bold">Oupidatat non</a>
+                          <p class="text-center text-danger mt-2">$250.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /.container-fluid -->
+              </section>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <!-- /.content-wrapper -->
 
@@ -193,6 +156,7 @@
   <!-- AdminLTE App -->
   <script src="../dist/js/adminlte.min.js"></script>
   <!-- custom -->
+  <script src="../dist/js/menu.js"></script>
   <script src="../dist/js/component.js"></script>
   <script src="../dist/js/templatemo.js"></script>
   <script>

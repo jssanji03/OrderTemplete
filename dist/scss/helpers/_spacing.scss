@@ -1,46 +1,16 @@
-.mt-15 {
-    margin-top: 15px !important;
+$max: 10;
+@for $i from 1 through $max {
+    .pt-#{$i} {
+        padding-top: ($max - $i + 1) * 10px;
+    }
+    .mt-#{$i} {
+        margin-top: ($max - $i + 1) * 10px;
+    }
+    .mb-#{$i} {
+        margin-bottom: ($max - $i + 1) * 10px;
+    }
 }
 
-.mt-30 {
-    margin-top: 30px !important;
-}
-
-.mt-50 {
-    margin-top: 50px !important;
-}
-
-.mt-70 {
-    margin-top: 70px !important;
-}
-
-.mt-100 {
-    margin-top: 100px !important;
-}
-
-.mb-15 {
-    margin-bottom: 15px !important;
-}
-
-.mb-30 {
-    margin-bottom: 30px !important;
-}
-
-.mb-50 {
-    margin-bottom: 50px !important;
-}
-
-.mb-70 {
-    margin-bottom: 70px !important;
-}
-
-.mb-80 {
-    margin-bottom: 80px !important;
-}
-
-.mb-100 {
-    margin-bottom: 100px !important;
-}
 
 .ml-15 {
     margin-left: 15px !important;
@@ -82,13 +52,10 @@
     padding-bottom: 70px !important;
 }
 
+
 .px-30 {
     padding-left: 30px !important;
     padding-right: 30px !important;
-}
-
-.pt-30 {
-    padding-top: 30px;
 }
 .lh-15 {
     line-height: 15px;

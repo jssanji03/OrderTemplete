@@ -1,6 +1,6 @@
  const data =[
         [
-            "dist/img/00.jpg",
+            "https://picsum.photos/id/1031/1400/400",
             "http://www.google.com.tw"
         ],
         [
@@ -35,7 +35,6 @@ function carousal(data) {
 }
 
 
-    
 const total = document.querySelectorAll('.carousel-item').length
 function append_li() {
   //下方自動加入控制圓鈕
